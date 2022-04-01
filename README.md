@@ -1,6 +1,6 @@
 Desafio de sistema de cadastro de pessoa.
 
-Links do sistema hospedado no Azure Container Instance.
+Links do sistema hospedado no Azure Container Instances.
 
 SPA em Angular: http://20.206.234.216/home
 
