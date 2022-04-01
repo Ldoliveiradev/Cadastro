@@ -1,0 +1,54 @@
+<div class="container main-container">
+  <h1>Lista de Cadastros</h1>
+  <hr />
+
+  <p>
+    <a class="btn btn-info" [routerLink]="['/cadastro/criar']">Novo Cadastro</a>
+  </p>
+
+  <table class="table table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>Idade</th>
+        <th>Cidade</th>
+        <th>UF</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pessoa of pessoas">
+        <td>
+          {{ pessoa.nome }}
+        </td>
+        <td>
+          {{ pessoa.cpf }}
+        </td>
+        <td>
+          {{ pessoa.idade }}
+        </td>
+        <td>
+          {{ pessoa.nomeCidade }}
+        </td>
+        <td>
+          {{ pessoa.uf }}
+        </td>
+        <td class="text-right">
+          <a
+            class="btn btn-info"
+            [routerLink]="['/cadastro/editar', pessoa.id]"
+          >
+            <span class="fa fa-pencil-alt"></span> </a
+          >&nbsp;
+          <a
+            class="btn btn-danger"
+            [routerLink]="['/cadastro/excluir', pessoa.id]"
+          >
+            <span class="fa fa-trash"></span>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

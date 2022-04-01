@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+
+  api:
+    image: ${DOCKER_REGISTRY-}cadastroapi
+    build:
+      context: .
+      dockerfile: src/Cadastro.API/Dockerfile
+
+  spa:
+    image: ${DOCKER_REGISTRY-}cadastrospa
+    build:
+      context: .
+      dockerfile: client/cadastro-spa/Dockerfile

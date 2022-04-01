@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+
+  sql-server:
+    container_name: sqlserver
+    environment:
+      - SA_PASSWORD=MeuDB@123
+      - ACCEPT_EULA=Y
+    ports:
+      - "5434:1433"
+
+  api:
+    container_name: cadastro.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5050:80"
+    depends_on:
+      - sql-server
+
+  spa:
+   container_name: cadastro.spa
+   ports:
+     - 4201:80
+   depends_on:
+     - api

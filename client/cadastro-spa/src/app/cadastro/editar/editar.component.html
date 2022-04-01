@@ -1,0 +1,107 @@
+<div class="container main-container">
+  <h3>Novo Cadastro</h3>
+
+  <hr />
+  <div class="row">
+    <div class="col-md-10">
+      <form (ngSubmit)="editarPessoa()" [formGroup]="cadastroForm">
+        <div class="alert alert-danger" *ngIf="errors.length > 0">
+          <h3 id="msgRetorno">Opa! Alguma coisa não deu certo:</h3>
+          <ul>
+            <li *ngFor="let error of errors">{{ error }}</li>
+          </ul>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">Nome</label>
+          <div>
+            <input
+              class="form-control"
+              id="nome"
+              type="text"
+              placeholder="Nome (requerido)"
+              formControlName="nome"
+            />
+            <span class="text-danger" *ngIf="displayMessage['nome']">
+              <p [innerHTML]="displayMessage['nome']"></p>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">CPF</label>
+          <div>
+            <input
+              class="form-control"
+              id="cpf"
+              type="text"
+              placeholder="CPF (requerido)"
+              formControlName="cpf"
+            />
+            <span class="text-danger" *ngIf="displayMessage['cpf']">
+              <p [innerHTML]="displayMessage['cpf']"></p>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">Idade</label>
+          <div>
+            <input
+              class="form-control"
+              id="idade"
+              type="text"
+              placeholder="Idade (requerido)"
+              formControlName="idade"
+            />
+            <span class="text-danger" *ngIf="displayMessage['idade']">
+              <p [innerHTML]="displayMessage['idade']"></p>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">Cidade</label>
+          <div>
+            <input
+              class="form-control"
+              id="nomeCidade"
+              type="text"
+              placeholder="Cidade (requerido)"
+              formControlName="nomeCidade"
+            />
+            <span class="text-danger" *ngIf="displayMessage['cidade']">
+              <p [innerHTML]="displayMessage['cidade']"></p>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">UF</label>
+          <div>
+            <input
+              class="form-control"
+              id="uf"
+              type="text"
+              placeholder="UF (requerido)"
+              formControlName="uf"
+            />
+            <span class="text-danger" *ngIf="displayMessage['uf']">
+              <p [innerHTML]="displayMessage['uf']"></p>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="submit"
+            id="EditarPessoa"
+            value="Editar"
+            class="btn btn-primary"
+          />&nbsp;
+          <a class="btn btn-info" href="/cadastro/listar-todos">Voltar</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

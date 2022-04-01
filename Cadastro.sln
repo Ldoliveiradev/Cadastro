@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cadastro.Domain", "src\Cadastro.Domain\Cadastro.Domain.csproj", "{554BF23B-A0EE-4C4A-A0E4-4EFCA375BC89}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cadastro.Infra.Data", "src\Cadastro.Infra.Data\Cadastro.Infra.Data.csproj", "{1913C649-D153-4A6C-91A2-97F17E4E028F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cadastro.API", "src\Cadastro.API\Cadastro.API.csproj", "{37B77809-5FA1-4500-A42B-5699E3402F57}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3C655CFE-31AA-4E0F-A73B-EFF924981F91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{554BF23B-A0EE-4C4A-A0E4-4EFCA375BC89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{554BF23B-A0EE-4C4A-A0E4-4EFCA375BC89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{554BF23B-A0EE-4C4A-A0E4-4EFCA375BC89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{554BF23B-A0EE-4C4A-A0E4-4EFCA375BC89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1913C649-D153-4A6C-91A2-97F17E4E028F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1913C649-D153-4A6C-91A2-97F17E4E028F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1913C649-D153-4A6C-91A2-97F17E4E028F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1913C649-D153-4A6C-91A2-97F17E4E028F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B77809-5FA1-4500-A42B-5699E3402F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B77809-5FA1-4500-A42B-5699E3402F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B77809-5FA1-4500-A42B-5699E3402F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B77809-5FA1-4500-A42B-5699E3402F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C655CFE-31AA-4E0F-A73B-EFF924981F91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C655CFE-31AA-4E0F-A73B-EFF924981F91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C655CFE-31AA-4E0F-A73B-EFF924981F91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C655CFE-31AA-4E0F-A73B-EFF924981F91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1602A23C-F26F-450C-9E1D-6780BDF9C485}
+	EndGlobalSection
+EndGlobal
